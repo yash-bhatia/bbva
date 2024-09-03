@@ -224,3 +224,14 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+.section.columns-container {
+  padding: 0;
+  background: #072146;
+  /* height: 60px; */
+}
+
+.section.highlight.columns-container {
+  background: #004481;
+  color: #fff;
+}
