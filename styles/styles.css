@@ -159,7 +159,7 @@ button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: 16px 36px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -169,6 +169,7 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 15px;
+  color: #fff;
 }
 
 a.button:hover,
@@ -242,4 +243,8 @@ main .section.highlight {
 .section.highlight.columns-container {
   background: #004481;
   color: #fff;
+}
+
+.columns.block.columns-2-cols p {
+  font-size: 15px;
 }
