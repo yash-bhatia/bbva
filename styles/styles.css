@@ -9,6 +9,8 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   /* colors */
@@ -62,7 +64,7 @@
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
-  font-family: var(--body-font-family);
+  font-family: "Libre Franklin", sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -83,7 +85,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font-family);
+  font-family: "Libre Franklin", sans-serif;
+
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
@@ -110,7 +113,7 @@ blockquote {
 
 code,
 pre {
-  font-family: var(--fixed-font-family);
+  font-family: "Libre Franklin", sans-serif;
   font-size: var(--body-font-size-s);
 }
 
@@ -144,7 +147,14 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  font-family: var(--body-font-family);
+  will-change: background-position;
+  background-size: 210% 100%;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+  transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+  background-color: #028484;
+  background-image: linear-gradient(100deg, #2dcccd 50%, #028484 50%);
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
