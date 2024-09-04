@@ -286,7 +286,7 @@ main .section.section-metadata-container {
   margin: auto;
 }
 
-.default-content-wrapper a.button {
+.section.section-metadata-container a.button:any-link, .section.section-metadata-container button {
   background: none;
   color: #f8cd51;
   font-size: 14px;
