@@ -236,8 +236,12 @@ main .section.highlight {
 
 .section.columns-container {
   padding: 0;
-  background: #072146;
+  /* background: #072146; */
   /* height: 60px; */
+}
+
+.section.section-metadata-container {
+    background: #072146;
 }
 
 .section.highlight.columns-container {
@@ -247,4 +251,8 @@ main .section.highlight {
 
 .columns.block.columns-2-cols p {
   font-size: 15px;
+}
+
+h1#follow-these-simple-steps {
+  text-align: center;
 }
