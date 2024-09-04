@@ -256,3 +256,11 @@ main .section.highlight {
 h1#follow-these-simple-steps {
   text-align: center;
 }
+
+.section.section-metadata-container  .default-content-wrapper {
+  width: 100%;
+  max-width: none !important;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
