@@ -257,7 +257,7 @@ h1#follow-these-simple-steps {
   text-align: center;
 }
 
-.section.section-metadata-container  .default-content-wrapper {
+.section.section-metadata-container .default-content-wrapper {
   width: 100%;
   max-width: none !important;
   padding: 0;
@@ -265,6 +265,6 @@ h1#follow-these-simple-steps {
   justify-content: space-between;
 }
 
-.section.section-metadata-container  .default-content-wrapper  .columns img {
+.section.section-metadata-container .default-content-wrapper .columns img {
   height: 40px;
 }
