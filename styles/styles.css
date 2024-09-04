@@ -247,6 +247,7 @@ main .section.highlight {
 .section.highlight.columns-container {
   background: #004481;
   color: #fff;
+  margin: 0 auto;
 }
 
 .columns.block.columns-2-cols p {
@@ -259,7 +260,6 @@ h1#follow-these-simple-steps {
 
 .section.section-metadata-container .default-content-wrapper {
   width: 100%;
-  max-width: none !important;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -267,4 +267,15 @@ h1#follow-these-simple-steps {
 
 .section.section-metadata-container .default-content-wrapper .columns img {
   height: 40px;
+}
+
+.section.section-metadata-container .default-content-wrapper {
+  height: 88px;
+  padding: 0;
+  display: flex;
+}
+
+
+main .section.section-metadata-container {
+  padding: 0;
 }
