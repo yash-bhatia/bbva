@@ -264,3 +264,7 @@ h1#follow-these-simple-steps {
   display: flex;
   justify-content: space-between;
 }
+
+.section.section-metadata-container  .default-content-wrapper  .columns img {
+  height: 40px;
+}
