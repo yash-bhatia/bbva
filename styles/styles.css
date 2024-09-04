@@ -279,3 +279,15 @@ h1#follow-these-simple-steps {
 main .section.section-metadata-container {
   padding: 0;
 }
+
+.columns.block.columns-3-cols img {
+  height: 24px;
+  text-align: center;
+  margin: auto;
+}
+
+.default-content-wrapper a.button {
+  background: none;
+  color: #f8cd51;
+  font-size: 14px;
+}
