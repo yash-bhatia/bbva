@@ -303,17 +303,35 @@ main .section.section-metadata-container {
   /* display: flex; */
   /* flex-direction: column; */
   text-align: center;
-  background-image: linear-gradient(-10deg, #072146 80%, transparent 80%);
+  /* background-image: linear-gradient(-10deg, #072146 80%, transparent 80%); */
     border-bottom: 2px solid #072146;
 }
 
 .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
 font-size: 40px;
+color: #626262;
 }
 
 .columns.block.columns-3-cols div:nth-child(2) a.button:any-link, .columns.block.columns-3-cols div:nth-child(2)  button, 
 .columns.block.columns-3-cols div:nth-child(1) a.button:any-link, .columns.block.columns-3-cols div:nth-child(1)  button, 
 .columns.block.columns-3-cols div:nth-child(3) a.button:any-link, .columns.block.columns-3-cols div:nth-child(3)  button {
   background: none;
+  color: #626262;
 }
 
+.default-content-wrapper p {
+  font-size: 15px;
+  text-align: center;
+}
+
+ul li {
+  font-size: 14px;
+}
+
+ul {
+  margin-bottom: 60px;
+}
+
+header.header-wrapper {
+  display: none;
+}
