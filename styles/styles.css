@@ -335,3 +335,12 @@ ul {
 header.header-wrapper {
   display: none;
 }
+
+.columns.block.columns-2-cols a {
+  background: none;
+  display: flex;
+}
+
+.columns.block.columns-2-cols img {
+  height: 24px;
+}
