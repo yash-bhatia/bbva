@@ -293,11 +293,6 @@ main .section.section-metadata-container {
   margin: auto;
 }
 
-.section.section-metadata-container a.button:any-link, .section.section-metadata-container button {
-  background: none;
-  color:#5bbeff;
-  font-size: 14px;
-}
 
 .columns.block.columns-3-cols+div {
   min-height: 192px;
@@ -369,8 +364,13 @@ header.header-wrapper {
 
 }
 
+main .section.section-metadata-container a.button:any-link, .section.section-metadata-container button {
+  background: none;
+  color:#5bbeff;
+  font-size: 14px;
+}
 
-main .section.section-metadata-container:nth-child(1) a {
+main .section.section-metadata-container:nth-child(1) a.button:any-link {
   color:  #f8cd51;
 }
 
