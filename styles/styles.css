@@ -329,9 +329,11 @@ color: #626262;
 
 ul li {
   font-size: 14px;
+  color: #626262;
 }
 
 ul {
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
@@ -361,7 +363,8 @@ header.header-wrapper {
 .section.section-metadata-container .default-content-wrapper .columns div p {
   text-align: left;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 100;
 }
 .section.highlight.columns-container:nth-child(2) {
 
@@ -398,3 +401,21 @@ footer {
   font-size: var(--body-font-size-s);
   display: none;
 }
+
+.columns.block.columns-2-cols:first-child a {
+  display: inline-block;
+  background-color: #028484;
+    will-change: background-position;
+    background-size: 210% 100%;
+    background-position: 99% center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    background-color: #028484;
+    background-image: linear-gradient(100deg, #2dcccd 50%, #028484 50%);
+}
+
+.columns.block.columns-2-cols:first-child a:hover {
+  background-position: 0 center;
+}
+
