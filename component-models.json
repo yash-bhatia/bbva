@@ -217,7 +217,13 @@
          "name": "author",
          "label": "Author",
          "value": ""
-       }
+       },
+       {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
      ]
   }
 ]

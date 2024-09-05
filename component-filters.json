@@ -52,20 +52,5 @@
       "title",
       "section"
     ]
-  },
-  {
-    "id": "quote",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "fragment",
-      "section",
-      "quote"
-    ]
   }
 ]
