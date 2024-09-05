@@ -288,7 +288,7 @@ main .section.section-metadata-container {
 
 .section.section-metadata-container a.button:any-link, .section.section-metadata-container button {
   background: none;
-  color: #f8cd51;
+  color:#5bbeff;
   font-size: 14px;
 }
 
@@ -344,3 +344,25 @@ header.header-wrapper {
 .columns.block.columns-2-cols img {
   height: 24px;
 }
+
+.section.highlight.columns-container:nth-child(2) {
+  background: #072146 !important;
+}
+
+.section.section-metadata-container .default-content-wrapper .columns div a {
+  text-align: left;
+  padding: 0;
+}
+.section.section-metadata-container .default-content-wrapper .columns div p {
+  text-align: left;
+}
+
+.section.highlight.columns-container:nth-child(2) {
+
+}
+
+
+main .section.section-metadata-container:nth-child(1) a {
+  color:  #f8cd51;
+}
+
