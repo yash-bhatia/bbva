@@ -475,3 +475,6 @@ main .hero-container > div {
   color: #fff;
 }
 
+.columns.block.columns-3-cols div:nth-child(2) a.button:any-link {
+  color: #626262;
+}
