@@ -352,7 +352,7 @@ header.header-wrapper {
 */
 
 .section.highlight.columns-container:nth-child(2) {
-  background: #072146 !important;
+  /* background: #072146 !important; */
   padding: 0;
 }
 
@@ -419,3 +419,7 @@ footer {
   background-position: 0 center;
 }
 
+
+main .section.section-metadata-container:nth-child(1) .default-content-wrapper+div {
+  background-color: red;
+}
