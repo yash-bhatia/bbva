@@ -455,3 +455,11 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
   margin: 0;
   padding: 0;
 }
+
+main .hero-container > div {
+  max-width: 1200px;
+}
+
+.hero-wrapper {
+  display: none;
+}
