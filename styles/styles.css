@@ -457,7 +457,7 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
 }
 
 main .hero-container > div {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
 .hero-wrapper {
