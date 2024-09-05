@@ -415,11 +415,17 @@ footer {
     background-image: linear-gradient(100deg, #2dcccd 50%, #028484 50%);
 }
 
-.columns.block.columns-2-cols:first-child a:hover {
+.columns.block.columns-2-cols:first-child a:hover, a.button:hover, button:hover {
   background-position: 0 center;
 }
 
 
 main .section.section-metadata-container:nth-child(1) .default-content-wrapper .columns:first-child {
   background-color: red;
+}
+
+
+.columns.block.columns-3-cols {
+  max-width: 816px;
+  margin: 0 auto;
 }
