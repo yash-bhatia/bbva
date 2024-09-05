@@ -176,7 +176,6 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
@@ -395,6 +394,8 @@ main .section.section-metadata-container a.button:any-link, .section.section-met
   background: none;
   color:#5bbeff;
   font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 main .section.section-metadata-container:nth-child(1) a.button:any-link {
