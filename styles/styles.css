@@ -429,3 +429,8 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
   max-width: 816px;
   margin: 0 auto;
 }
+
+.columns.block.columns-3-cols, .columns.block.columns-3-cols > div {
+
+  gap: 0;
+}
