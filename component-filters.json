@@ -40,16 +40,5 @@
       "title",
       "section"
     ]
-  },
-  {
-    "id": "hero",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "section",
-      "columns"
-    ]
   }
 ]
