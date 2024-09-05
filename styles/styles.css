@@ -310,6 +310,11 @@ main .section.section-metadata-container {
     border-bottom: 2px solid #072146;
 }
 
+.columns.block.columns-3-cols div:nth-child(1) {
+    background-image: linear-gradient(-10deg, #028484 80%, transparent 80%);
+    border-bottom: 2px solid #028484;
+  }    
+
 .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
 font-size: 40px;
 color: #626262;
@@ -421,7 +426,7 @@ footer {
 
 
 main .section.section-metadata-container:nth-child(1) .default-content-wrapper .columns:first-child {
-  background-color: red;
+  /* background-color: red; */
 }
 
 
@@ -433,4 +438,15 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
 .columns.block.columns-3-cols, .columns.block.columns-3-cols > div {
 
   gap: 0;
+}
+
+
+.columns.block.columns-3-cols div:nth-child(2) p, 
+.columns.block.columns-3-cols div:nth-child(1) p, 
+.columns.block.columns-3-cols div:nth-child(3) p,
+.columns.block.columns-3-cols div:nth-child(2) h1, 
+.columns.block.columns-3-cols div:nth-child(1) h1, 
+.columns.block.columns-3-cols div:nth-child(3) h1, {
+  margin: 0;
+  padding: 0;
 }
