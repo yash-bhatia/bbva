@@ -310,10 +310,15 @@ main .section.section-metadata-container {
     border-bottom: 2px solid #072146;
 }
 
-.columns.block.columns-3-cols div:nth-child(1) {
-    background-image: linear-gradient(-10deg, #028484 80%, transparent 80%);
+.columns.block.columns-3-cols div div:nth-child(1)  {
+    background-image: linear-gradient(-10deg, #028484 0%, t#028484 100%);
     border-bottom: 2px solid #028484;
   }    
+
+  .columns.block.columns-3-cols div div:nth-child(1) p,
+  .columns.block.columns-3-cols div div:nth-child(1) h1 {
+    color #fff;
+  } 
 
 .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
 font-size: 40px;
