@@ -451,7 +451,7 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
 .columns.block.columns-3-cols div:nth-child(3) p,
 .columns.block.columns-3-cols div:nth-child(2) h1, 
 .columns.block.columns-3-cols div:nth-child(1) h1, 
-.columns.block.columns-3-cols div:nth-child(3) h1, {
+.columns.block.columns-3-cols div:nth-child(3) h1 {
   margin: 0;
   padding: 0;
 }
