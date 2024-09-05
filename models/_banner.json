@@ -1,0 +1,53 @@
+{
+    "definitions": [
+      {
+        "title": "Banner",
+        "id": "banner",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/banner/v1/banner",
+              "template": {
+                "model": "banner"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "banner",
+        "fields": [
+          {
+            "component": "multiselect",
+            "name": "style",
+            "label": "Style",
+            "options": [
+              {
+                "name": "Highlight",
+                "value": "highlight"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "id": "banner",
+        "components": [
+          "text",
+          "image",
+          "button",
+          "title",
+          "hero",
+          "cards",
+          "columns",
+          "fragment",
+          "section"
+        ]
+      }
+    ]
+  }
+  
