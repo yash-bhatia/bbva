@@ -264,6 +264,7 @@ body > main > div:nth-child(5) > div.default-content-wrapper > div:nth-child(1) 
 
 h1#follow-these-simple-steps {
   text-align: center;
+  font-weight: 100;
 }
 
 .section.section-metadata-container .default-content-wrapper {
@@ -350,6 +351,7 @@ header.header-wrapper {
 
 .section.highlight.columns-container:nth-child(2) {
   background: #072146 !important;
+  padding: 0;
 }
 
 .section.section-metadata-container .default-content-wrapper .columns div a {
@@ -358,11 +360,21 @@ header.header-wrapper {
 }
 .section.section-metadata-container .default-content-wrapper .columns div p {
   text-align: left;
+  color: #fff;
+  font-size: 14px;
 }
-
 .section.highlight.columns-container:nth-child(2) {
 
 }
+
+main .section.section-metadata-container {
+  padding: 20px 0;
+}
+
+main .section.section-metadata-container:nth-child(1) {
+  padding: 0 0;
+}
+
 
 main .section.section-metadata-container a.button:any-link, .section.section-metadata-container button {
   background: none;
