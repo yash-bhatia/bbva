@@ -420,6 +420,6 @@ footer {
 }
 
 
-main .section.section-metadata-container:nth-child(1) .default-content-wrapper+div {
+main .section.section-metadata-container:nth-child(1) .default-content-wrapper .columns:first-child {
   background-color: red;
 }
