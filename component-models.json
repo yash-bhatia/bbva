@@ -176,7 +176,7 @@
     ]
   },
   {
-    "id": "quote",
+    "id": "banner",
     "fields": [
        {
          "component": "richtext",
