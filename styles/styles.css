@@ -374,3 +374,15 @@ main .section.section-metadata-container:nth-child(1) a.button:any-link {
   color:  #f8cd51;
 }
 
+
+main .section.section-metadata-container .columns img {
+  width: auto;
+}
+
+
+footer {
+  padding: 2rem;
+  background-color: var(--light-color);
+  font-size: var(--body-font-size-s);
+  display: none;
+}
