@@ -311,7 +311,7 @@ main .section.section-metadata-container {
 }
 
 .columns.block.columns-3-cols div div:nth-child(1)  {
-    background-image: linear-gradient(-10deg, #028484 0%, t#028484 100%);
+    background-image: linear-gradient(-10deg, #028484 0%, #028484 100%);
     border-bottom: 2px solid #028484;
   }    
 
