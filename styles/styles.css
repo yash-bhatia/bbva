@@ -243,7 +243,10 @@ main .section.highlight {
 .section.section-metadata-container {
     background: #072146;
 }
-
+body > main > div:nth-child(5) > div.default-content-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 .section.highlight.columns-container {
   background: #004481;
   color: #fff;
