@@ -277,7 +277,7 @@ h1#follow-these-simple-steps {
   height: 24px;
 }
 
-main .section.section-metadata-container:nth-child(1) img {
+main .section.section-metadata-container:nth-child(1) .columns img {
   height: 40px;
 }
 
