@@ -307,7 +307,6 @@ main .section.section-metadata-container {
   /* flex-direction: column; */
   text-align: center;
   /* background-image: linear-gradient(-10deg, #072146 80%, transparent 80%); */
-    border-bottom: 2px solid #072146;
 }
 
 .columns.block.columns-3-cols div div:nth-child(1)  {
@@ -320,6 +319,7 @@ main .section.section-metadata-container {
   .columns.block.columns-3-cols div div:nth-child(1) a.button
    {
     color: #fff;
+    padding-top: 20px;
   } 
 
 .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
@@ -401,7 +401,6 @@ main .section.section-metadata-container:nth-child(1) a.button:any-link {
   color:  #f8cd51;
 }
 
-
 main .section.section-metadata-container .columns img {
   width: auto;
 }
@@ -440,6 +439,7 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
 .columns.block.columns-3-cols {
   max-width: 816px;
   margin: 0 auto;
+  border-bottom: 2px solid #072146;
 }
 
 .columns.block.columns-3-cols, .columns.block.columns-3-cols > div {
@@ -469,3 +469,8 @@ main .hero-container > div {
 .hero-wrapper {
   display: none;
 }
+
+.columns.block.columns-3-cols div:nth-child(1) a.button:any-link {
+  color: #fff;
+}
+
