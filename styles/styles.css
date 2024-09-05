@@ -281,11 +281,18 @@ main .section.section-metadata-container:nth-child(1) .default-content-wrapper .
   height: 40px !important;
 }
 
-
 .section.section-metadata-container .default-content-wrapper {
   padding: 0;
   display: flex;
+  padding: 30px;
 }
+
+
+main .section.section-metadata-container:nth-child(1) .default-content-wrapper {
+  padding: 0 !important;
+}
+
+
 
 
 main .section.section-metadata-container {
