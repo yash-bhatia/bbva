@@ -18,7 +18,7 @@
       "columns",
       "fragment",
       "section",
-      "banner"
+      "quote"
     ]
   },
   {
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id": "section",
+    "id": "quote",
     "components": [
       "text",
       "image",
@@ -63,7 +63,9 @@
       "hero",
       "cards",
       "columns",
+      "fragment",
+      "section",
       "quote"
-     ]
+    ]
   }
 ]
