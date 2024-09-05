@@ -317,7 +317,7 @@ main .section.section-metadata-container {
 
   .columns.block.columns-3-cols div div:nth-child(1) p,
   .columns.block.columns-3-cols div div:nth-child(1) h1 {
-    color #fff;
+    color: #fff;
   } 
 
 .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
