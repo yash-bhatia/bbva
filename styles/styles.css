@@ -274,6 +274,10 @@ h1#follow-these-simple-steps {
 }
 
 .section.section-metadata-container .default-content-wrapper .columns img {
+  height: 24px;
+}
+
+main .section.section-metadata-container:nth-child(1) img {
   height: 40px;
 }
 
@@ -321,9 +325,11 @@ main .section.section-metadata-container {
     padding-top: 20px;
   } 
 
-.columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
-font-size: 40px;
-color: #626262;
+  .columns.block.columns-3-cols div:nth-child(2) h1, .columns.block.columns-3-cols div:nth-child(1) h1, .columns.block.columns-3-cols div:nth-child(3) h1 {
+    font-size: 40px;
+    color: #626262;
+    margin: 0 !important;
+    padding-top: 20px !important;
 }
 
 .columns.block.columns-3-cols div:nth-child(2) a.button:any-link, .columns.block.columns-3-cols div:nth-child(2)  button, 
