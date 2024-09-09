@@ -191,13 +191,8 @@
          "name": "description",
          "label": "Description",
          "value": ""
-       },
-       {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },{
+       }
+       ,{
         "component": "aem-content",
         "name": "link",
         "label": "Link"
