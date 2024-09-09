@@ -493,3 +493,37 @@ main .hero-container > div {
 .columns.block.columns-3-cols div:nth-child(3) a.button:any-link {
   color: #626262;
 }
+
+main .section {
+  padding: 0;
+}
+
+.section.banner-container.bannerimage-container {
+  display: flex;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  background: #004581;
+}
+
+.section.banner-container.bannerimage-container p, .section.banner-container.bannerimage-container a,
+.section.banner-container.bannerimage-container h1
+ {
+  color: #fff;
+}
+
+.section.banner-container.bannerimage-container p {
+  font-size: 15px;
+}
+
+.section.banner-container.bannerimage-container p[data-aue-prop="link"] {
+  display: inline-block;
+  background-color: #028484;
+    will-change: background-position;
+    background-size: 210% 100%;
+    background-position: 99% center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    background-color: #028484;
+    background-image: linear-gradient(100deg, #2dcccd 50%, #028484 50%);
+}
