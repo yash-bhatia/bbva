@@ -561,3 +561,15 @@ main .section {
 .section .banner-wrapper {
   margin-right: -280px;
 }
+
+.section.banner-container.bannerimage-container h1 {
+  margin-top: 80px;
+}
+
+.section.banner-container.bannerimage-container p[data-aue-prop="link"] {
+  margin-bottom: 60px;
+}
+
+.bannerimage-wrapper {
+  align-self: center;
+}
