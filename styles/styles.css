@@ -558,9 +558,9 @@ main .section {
   margin: 0 auto;
 }
 
-.section .banner-wrapper {
+/* .section .banner-wrapper {
   margin-right: -280px;
-}
+} */
 
 .section.banner-container.bannerimage-container h1 {
   margin-top: 80px;
