@@ -552,3 +552,7 @@ main .section {
   max-width: 600px;
   margin: 0 auto;
 }
+
+.section .banner-wrapper {
+  margin-right: -280px;
+}
