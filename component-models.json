@@ -200,7 +200,7 @@
      ]
   },
   {
-    "id": "banner1",
+    "id": "bannerimage",
     "fields": [
       {
         "component": "reference",
