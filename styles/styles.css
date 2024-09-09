@@ -264,6 +264,11 @@ body > main > div:nth-child(5) > div.default-content-wrapper > div:nth-child(1) 
 h1#follow-these-simple-steps {
   text-align: center;
   font-weight: 100;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.default-content-wrapper ul {
+  margin-bottom: 100px;
 }
 
 .section.section-metadata-container .default-content-wrapper {
