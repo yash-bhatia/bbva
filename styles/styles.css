@@ -394,6 +394,14 @@ header.header-wrapper {
   font-size: 12px;
   font-weight: 100;
 }
+
+main .section:last-child .section-metadata-container .default-content-wrapper .columns div p {
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+}
+
 .section.highlight.columns-container:nth-child(2) {
 
 }
@@ -414,6 +422,15 @@ main .section.section-metadata-container a.button:any-link, .section.section-met
   padding: 0;
   margin: 0;
 }
+
+main .sectio:last-child a.button:any-link, .section.section-metadata-container button {
+  background: none;
+  color:#5bbeff;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
 
 main .section.section-metadata-container:nth-child(1) a.button:any-link {
   color:  #f8cd51;
@@ -573,3 +590,79 @@ main .section {
 .bannerimage-wrapper {
   align-self: center;
 }
+
+main .section:first-child .default-content-wrapper {
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .section:first-child a.button:any-link {
+  color: #f8cd51;
+  background: transparent;
+  padding: 0;
+}
+
+
+main .section:first-child, main .section:last-child  {
+  display: flex;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  background: #004581;
+}
+
+main .section:last-child  {
+background: #072146;
+padding: 50px 0;
+}
+
+main .section:last-child  p {
+  color: #fff
+}
+
+main .section:last-child .default-content-wrapper {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section:last-child p img {
+  height: 24px;
+}
+
+main .section:last-child .default-content-wrapper {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+
+main .section:last-child  .default-content-wrapper p {
+  text-align: left;
+}
+
+main .section:last-child p:nth-child(20),
+main .section:last-child p:nth-child(21) {
+
+  grid-column: span 3;
+}
+
+main .section:last-child p:nth-child(8),
+main .section:last-child p:nth-child(9),
+main .section:last-child p:nth-child(10),
+main .section:last-child p:nth-child(11)  {
+
+  grid-column: span 1;
+}
+
+main .section:last-child a.button {
+background: none;
+    color: #5bbeff;
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 0;
+  }
