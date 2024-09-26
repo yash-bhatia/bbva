@@ -173,9 +173,21 @@ async function loadPage() {
       })
     }
 
-  
-  
-  
+    const middle_button =  document.querySelector("body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a");
+    middle_button.addEventListener('click' , (event) =>{
+      event.preventDefault;
+      middle_button.href=window.location.href;
+    })
+
+    const footer_anchors = document.querySelectorAll("body > main > div:nth-child(5) > div a");
+    console.log(footer_anchors);
+    for(let i=0;i<footer_anchors.length;i++)
+    {
+      footer_anchors[i].addEventListener('click' , (event) =>{
+        event.preventDefault();
+        footer_anchors[i].href=window.location.href;
+      })
+    }
 }
 
 loadPage();
