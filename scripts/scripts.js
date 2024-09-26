@@ -149,6 +149,33 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  const paragraph = (document.querySelector("body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div p"));
+  const anchor = document.createElement("a");
+  anchor.href=window.location.href;
+  anchor.textContent=paragraph.textContent;
+  console.log(paragraph);
+  console.log(anchor);
+  paragraph.parentNode.replaceChild(anchor,paragraph);
+  const nav_element = document.querySelectorAll("body > main > div:nth-child(1) > div p");
+  for(let i = nav_element.length-1;i>=nav_element.length - 3;i--)
+  {
+    nav_element[i].remove();
+  }
+
+  console.log(nav_element);
+
+    const remaining_nav_element = document.querySelectorAll("body > main > div:nth-child(1) > div p");
+    for(let i=0;i<remaining_nav_element.length;i++)
+    {
+      remaining_nav_element[i].addEventListener('click' , (event)=>{
+        event.preventDefault();
+        location.reload();
+      })
+    }
+
+  
+  
+  
 }
 
 loadPage();
