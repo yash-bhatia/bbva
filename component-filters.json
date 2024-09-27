@@ -42,5 +42,14 @@
       "title",
       "section"
     ]
+  },{
+    "id": "banner",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "section"
+    ]
   }
 ]
