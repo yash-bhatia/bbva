@@ -149,9 +149,12 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  const goToLink = document.querySelector("body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a");
+    let goTo = goToLink.href;
   const paragraph = (document.querySelector("body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div p"));
   const anchor = document.createElement("a");
-  anchor.href=window.location.href;
+  anchor.href=goTo;
+  goToLink.remove();
   anchor.textContent=paragraph.textContent;
   console.log(paragraph);
   console.log(anchor);
@@ -188,6 +191,7 @@ async function loadPage() {
         footer_anchors[i].href=window.location.href;
       })
     }
+    
 }
 
 loadPage();
