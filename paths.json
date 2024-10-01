@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/bbva/:/",
-    "/content/bbva/configuration:/.helix/config.json"
+    "/content/Test/:/",
+    "/content/Test/configuration:/.helix/config.json"
   ]
 }
