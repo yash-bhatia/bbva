@@ -149,49 +149,47 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  const goToLink = document.querySelector("body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a");
-    let goTo = goToLink.href;
-  const paragraph = (document.querySelector("body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div p"));
-  const anchor = document.createElement("a");
-  anchor.href=goTo;
+  const goToLink = document.querySelector('body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a');
+  const goTo = goToLink.href;
+  const paragraph = (document.querySelector('body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div p'));
+  const anchor = document.createElement('a');
+  anchor.href = goTo;
   goToLink.remove();
-  anchor.textContent=paragraph.textContent;
+  anchor.textContent = paragraph.textContent;
   console.log(paragraph);
   console.log(anchor);
-  paragraph.parentNode.replaceChild(anchor,paragraph);
-  const nav_element = document.querySelectorAll("body > main > div:nth-child(1) > div p");
-  for(let i = nav_element.length-1;i>=nav_element.length - 3;i--)
+  paragraph.parentNode.replaceChild(anchor , paragraph);
+  const navElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
+  for (let i = navElement.length - 1 ; i >= navElement.length - 3 ; i--)
   {
-    nav_element[i].remove();
+    navElement[i].remove();
   }
 
-  console.log(nav_element);
+  console.log(navElement);
 
-    const remaining_nav_element = document.querySelectorAll("body > main > div:nth-child(1) > div p");
-    for(let i=0;i<remaining_nav_element.length;i++)
-    {
-      remaining_nav_element[i].addEventListener('click' , (event)=>{
-        event.preventDefault();
-        location.reload();
+  const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
+  for (let i = 0 ; i < remainingNavElement.length ; i++)
+  {
+      remainingNavElement[i].addEventListener('click', (event) => {
+      event.preventDefault();
+      location.reload();
       })
-    }
+  }
 
-    const middle_button =  document.querySelector("body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a");
-    middle_button.addEventListener('click' , (event) =>{
-      event.preventDefault;
-      middle_button.href=window.location.href;
-    })
+  const middleButton =  document.querySelector('body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a');
+  middleButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  middleButton.href = window.location.href;
+  });
 
-    const footer_anchors = document.querySelectorAll("body > main > div:nth-child(5) > div a");
-    console.log(footer_anchors);
-    for(let i=0;i<footer_anchors.length;i++)
-    {
-      footer_anchors[i].addEventListener('click' , (event) =>{
-        event.preventDefault();
-        footer_anchors[i].href=window.location.href;
+  const footerAnchors = document.querySelectorAll('body > main > div:nth-child(5) > div a');
+  console.log(footerAnchors);
+  for (let i = 0 ; i < footerAnchors.length ; i++)
+  {
+      footerAnchors[i].addEventListener('click' , (event) => {
+      event.preventDefault();
+      footerAnchors[i].href=window.location.href;
       })
-    }
-    
+  }
 }
-
 loadPage();
