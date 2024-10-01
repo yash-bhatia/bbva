@@ -160,16 +160,14 @@ async function loadPage() {
   console.log(anchor);
   paragraph.parentNode.replaceChild(anchor, paragraph);
   const navElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
-  for (let i = navElement.length - 1; i >= navElement.length - 3; i--)
-  {
+  for (let i = navElement.length - 1; i >= navElement.length - 3; i = i - 1) {
     navElement[i].remove();
   }
 
   console.log(navElement);
 
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
-  for (let i = 0; i < remainingNavElement.length; i++)
-  {
+  for (let i = 0; i < remainingNavElement.length; i = i + 1) {
     remainingNavElement[i].addEventListener('click', (event) => {
     event.preventDefault();
     location.reload();
@@ -184,8 +182,7 @@ async function loadPage() {
 
   const footerAnchors = document.querySelectorAll('body > main > div:nth-child(5) > div a');
   console.log(footerAnchors);
-  for (let i = 0; i < footerAnchors.length; i++)
-  {
+  for (let i = 0; i < footerAnchors.length; i = i + 1) {
     footerAnchors[i].addEventListener('click', (event) => {
     event.preventDefault();
     footerAnchors[i].href = window.location.href;
