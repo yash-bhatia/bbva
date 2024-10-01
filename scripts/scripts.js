@@ -170,7 +170,7 @@ async function loadPage() {
   for (let i = 0; i < remainingNavElement.length; i += 1) {
     remainingNavElement[i].addEventListener('click', (event) => {
       event.preventDefault();
-      window.location.href = window.location.href;
+      window.history.go(0);
     });
   }
 
