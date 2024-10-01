@@ -158,9 +158,9 @@ async function loadPage() {
   anchor.textContent = paragraph.textContent;
   console.log(paragraph);
   console.log(anchor);
-  paragraph.parentNode.replaceChild(anchor , paragraph);
+  paragraph.parentNode.replaceChild(anchor, paragraph);
   const navElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
-  for (let i = navElement.length - 1 ; i >= navElement.length - 3 ; i--)
+  for (let i = navElement.length - 1; i >= navElement.length - 3; i--)
   {
     navElement[i].remove();
   }
@@ -168,28 +168,28 @@ async function loadPage() {
   console.log(navElement);
 
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
-  for (let i = 0 ; i < remainingNavElement.length ; i++)
+  for (let i = 0; i < remainingNavElement.length; i++)
   {
-      remainingNavElement[i].addEventListener('click', (event) => {
-      event.preventDefault();
-      location.reload();
-      })
+    remainingNavElement[i].addEventListener('click', (event) => {
+    event.preventDefault();
+    location.reload();
+    });
   }
 
-  const middleButton =  document.querySelector('body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a');
+  const middleButton = document.querySelector('body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a');
   middleButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  middleButton.href = window.location.href;
+    event.preventDefault();
+    middleButton.href = window.location.href;
   });
 
   const footerAnchors = document.querySelectorAll('body > main > div:nth-child(5) > div a');
   console.log(footerAnchors);
-  for (let i = 0 ; i < footerAnchors.length ; i++)
+  for (let i = 0; i < footerAnchors.length; i++)
   {
-      footerAnchors[i].addEventListener('click' , (event) => {
-      event.preventDefault();
-      footerAnchors[i].href=window.location.href;
-      })
+    footerAnchors[i].addEventListener('click', (event) => {
+    event.preventDefault();
+    footerAnchors[i].href = window.location.href;
+    });
   }
 }
 loadPage();
