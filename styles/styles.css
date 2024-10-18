@@ -669,7 +669,7 @@ background: none;
     margin: 0;
   }
 
-  body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div a {
+  body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > a {
     will-change: background-position;
     background-size: 210% 100%; /* Ensure there's enough space for the slide */
     background-position: 99% center; /* Start position */
@@ -694,7 +694,7 @@ background: none;
     color: #fff;
 }
 
-body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div a:hover {
+body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > a:hover {
     background-position: 0 center; /* Slide the gradient to the left on hover */
 }
 body > main > div:nth-child(1){

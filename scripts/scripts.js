@@ -149,23 +149,14 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  const goToLink = document.querySelector('body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a');
-  const goTo = goToLink.href;
-  const paragraph = (document.querySelector('body > main > div.section.highlight.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div p'));
+  const goToLink = document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a');
+  const goTo = goToLink.title;
+  const paragraph = (document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > p'));
   const anchor = document.createElement('a');
   anchor.href = goTo;
   goToLink.remove();
   anchor.textContent = paragraph.textContent;
-  console.log(paragraph);
-  console.log(anchor);
   paragraph.parentNode.replaceChild(anchor, paragraph);
-  const navElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
-  for (let i = navElement.length - 1; i >= navElement.length - 3; i -= 1) {
-    navElement[i].remove();
-  }
-
-  console.log(navElement);
-
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
   for (let i = 0; i < remainingNavElement.length; i += 1) {
     remainingNavElement[i].addEventListener('click', (event) => {
