@@ -131,7 +131,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "background-color",
+        "name": "backgroundColor",
         "label": "Background Color",
         "value": "#004581"
       },
