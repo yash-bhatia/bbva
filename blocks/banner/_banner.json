@@ -52,6 +52,13 @@
           "name": "backgroundColor",
           "label": "Background Color",
           "value": "#004581"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "buttonColor",
+          "label": "CTA Color",
+          "value": "#f8cd51"
         }
       ]
     }

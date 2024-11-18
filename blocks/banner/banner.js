@@ -4,6 +4,10 @@ export default function decorate(block) {
   let ctaButton = '';
   [...block.children].forEach((row, index) => {
     console.log(row, index);
+    const buttonLinks = document.querySelectorAll('a.button:any-link, button');
+    buttonLinks.forEach(button => {
+      button.style.backgroundColor = '#f8cd51'; // Set your desired background color here
+    });
     if (row.textContent.trim().startsWith('#')) {
       const bannerContainer = document.querySelector('.section.banner-container.bannerimage-container');
       if (bannerContainer) {
