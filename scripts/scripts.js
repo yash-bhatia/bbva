@@ -149,14 +149,6 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  const goToLink = document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > p > a');
-  const goTo = goToLink.title;
-  const paragraph = (document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p'));
-  const anchor = document.createElement('a');
-  anchor.href = goTo;
-  goToLink.remove();
-  anchor.textContent = paragraph.textContent;
-  paragraph.parentNode.replaceChild(anchor, paragraph);
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
   for (let i = 0; i < remainingNavElement.length; i += 1) {
     remainingNavElement[i].addEventListener('click', (event) => {
