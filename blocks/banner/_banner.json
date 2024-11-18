@@ -37,6 +37,13 @@
           "value": ""
         },
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "background-color",
+          "label": "Background Color",
+          "value": "#004581"
+        },
+        {
           "component": "aem-content",
           "name": "link",
           "label": "Link"

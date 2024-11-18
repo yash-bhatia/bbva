@@ -15,32 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "section",
-      "banner",
-      "bannerimage"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "section"
+      "fragment"
     ]
   },
   {
@@ -61,6 +36,27 @@
       "button",
       "title",
       "section"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   }
 ]
