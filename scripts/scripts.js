@@ -149,9 +149,9 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
-  const goToLink = document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a');
+  const goToLink = document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > p > a');
   const goTo = goToLink.title;
-  const paragraph = (document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > p'));
+  const paragraph = (document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p'));
   const anchor = document.createElement('a');
   anchor.href = goTo;
   goToLink.remove();
