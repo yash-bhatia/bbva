@@ -45,6 +45,11 @@
         },
         {
           "component": "aem-content",
+          "name": "goTolink",
+          "label": "goToLink"
+        },
+        {
+          "component": "aem-content",
           "name": "link",
           "label": "Link"
         }
