@@ -37,13 +37,6 @@
           "value": ""
         },
         {
-          "component": "text",
-          "valueType": "string",
-          "name": "backgroundColor",
-          "label": "Background Color",
-          "value": "#004581"
-        },
-        {
           "component": "aem-content",
           "name": "goTolink",
           "label": "goToLink"
@@ -52,6 +45,13 @@
           "component": "aem-content",
           "name": "link",
           "label": "Link"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "value": "#004581"
         }
       ]
     }
