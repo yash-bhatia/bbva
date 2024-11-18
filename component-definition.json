@@ -93,7 +93,8 @@
                   "name": "Banner",
                   "model": "banner",
                   "title": "<p>Think, McFly! Think!</p>",
-                  "description": "Biff Tannen"
+                  "description": "Biff Tannen",
+                  "backgroundColor": "#004581"
                 }
               }
             }
