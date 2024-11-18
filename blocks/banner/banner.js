@@ -1,7 +1,8 @@
 export default function decorate(block) {
   [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      console.log(col.textContent.trim());
-    });
+    if (row.textContent.trim().startsWith('#')) {
+      row.style.backgroundColor = row.textContent.trim();
+      row.textContent = '';
+    }
   });
 }
