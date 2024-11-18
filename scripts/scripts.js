@@ -151,7 +151,6 @@ async function loadPage() {
   loadDelayed();
   const goToLink = document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(4) > div > p > a');
   const goTo = goToLink.title;
-  console.log("Title: " + goToLink.backgroundColor);
   const paragraph = (document.querySelector('body > main > div.section.banner-container.bannerimage-container > div.banner-wrapper > div > div:nth-child(3) > div > p'));
   const anchor = document.createElement('a');
   anchor.href = goTo;
