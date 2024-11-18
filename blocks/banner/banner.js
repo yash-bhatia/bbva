@@ -4,11 +4,15 @@ export default function decorate(block) {
   let ctaButton = '';
   [...block.children].forEach((row, index) => {
     console.log(row, index);
-    const buttonLinks = document.querySelectorAll('a.button:any-link, button');
-    buttonLinks.forEach(button => {
-      button.style.backgroundColor = '#f8cd51'; // Set your desired background color here
-    });
-    if (row.textContent.trim().startsWith('#')) {
+    if (index === 5) {
+      const buttonLinks = document.querySelectorAll('a.button:any-link, button');
+      buttonLinks.forEach(button => {
+        // eslint-disable-next-line max-len
+        button.style.backgroundColor = row.textContent.trim(); // Set your desired background color here
+      });
+      row.textContent = '';
+    }
+    if (index === 4) {
       const bannerContainer = document.querySelector('.section.banner-container.bannerimage-container');
       if (bannerContainer) {
         // eslint-disable-next-line max-len
