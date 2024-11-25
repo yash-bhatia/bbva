@@ -149,6 +149,18 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const headerSection = document.querySelector('.headernav.section');
+    if (headerSection) {
+      headerSection.style.backgroundColor = '#004581'; // Set your desired background color here
+    }
+    const footerSection = document.querySelector('.footernav.section');
+    if (footerSection) {
+      footerSection.style.backgroundColor = '#004581'; // Set your desired background color here
+    }
+  });
+
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
   for (let i = 0; i < remainingNavElement.length; i += 1) {
     remainingNavElement[i].addEventListener('click', (event) => {
