@@ -108,12 +108,12 @@
             "value": "highlight"
           },
           {
-            "name": "Header",
-            "value": "header"
+            "name": "HeaderNav",
+            "value": "headernav"
           },
           {
-            "name": "Footer",
-            "value": "footer"
+            "name": "FooterNav",
+            "value": "footernav"
           }
         ]
       },
