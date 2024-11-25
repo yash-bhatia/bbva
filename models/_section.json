@@ -27,23 +27,8 @@
             {
               "name": "Highlight",
               "value": "highlight"
-            },
-            {
-              "name": "HeaderNav",
-              "value": "headernav"
-            },
-            {
-              "name": "FooterNav",
-              "value": "footernav"
             }
           ]
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "sectionColor",
-          "label": "Section Color",
-          "value": ""
         }
       ]
     }
