@@ -155,13 +155,13 @@ async function loadPage() {
   if (headerSection) {
     sectionColor = headerSection.getAttribute('data-sectioncolor');
     console.log(sectionColor);
-    headerSection.style.backgroundColor = '#004581'; // Set your desired background color here
+    headerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`; // Set your desired background color here
   }
   const footerSection = document.querySelector('.footernav.section');
   if (footerSection) {
     sectionColor = footerSection.getAttribute('data-sectioncolor');
     console.log(sectionColor);
-    footerSection.style.backgroundColor = '#004581'; // Set your desired background color here
+    footerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`; // Set your desired background color here
   }
 
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
