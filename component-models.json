@@ -108,6 +108,13 @@
             "value": "highlight"
           }
         ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "backgroundColor",
+        "label": "Background Color",
+        "value": ""
       }
     ]
   },
