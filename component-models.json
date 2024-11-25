@@ -106,14 +106,22 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Header",
+            "value": "header"
+          },
+          {
+            "name": "Footer",
+            "value": "footer"
           }
         ]
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "backgroundColor",
-        "label": "Background Color",
+        "name": "sectionColor",
+        "label": "Section Color",
         "value": ""
       }
     ]
