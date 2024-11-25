@@ -151,12 +151,17 @@ async function loadPage() {
   loadDelayed();
 
   document.addEventListener('DOMContentLoaded', () => {
+    let sectionColor;
     const headerSection = document.querySelector('.headernav.section');
     if (headerSection) {
+      sectionColor = headerSection.getAttribute('data-sectioncolor');
+      console.log(sectionColor);
       headerSection.style.backgroundColor = '#004581'; // Set your desired background color here
     }
     const footerSection = document.querySelector('.footernav.section');
     if (footerSection) {
+      sectionColor = footerSection.getAttribute('data-sectioncolor');
+      console.log(sectionColor);
       footerSection.style.backgroundColor = '#004581'; // Set your desired background color here
     }
   });
