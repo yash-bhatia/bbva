@@ -8,7 +8,7 @@ export default function decorate(block) {
       const buttonLinks = document.querySelectorAll('.section.banner-container a.button:any-link, button');
       buttonLinks.forEach((button) => {
         // eslint-disable-next-line max-len
-        console.log(row.textContent.trim());
+        console.log(button);
         // eslint-disable-next-line max-len
         button.style.backgroundColor = row.textContent.trim(); // Set your desired background color here
       });
