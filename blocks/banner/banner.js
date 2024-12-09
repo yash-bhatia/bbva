@@ -28,6 +28,7 @@ export default function decorate(block) {
     }
     if (index === 2) {
       ctaButton = row.querySelector('a');
+      ctaButton.classList.add('button'); // Add the class "button" to ctaButton
       ctaLink = ctaButton.textContent;
     }
   });
