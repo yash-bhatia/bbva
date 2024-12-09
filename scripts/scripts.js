@@ -172,11 +172,12 @@ async function loadPage() {
     });
   }
 
-  const middleButton = document.querySelector('body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a');
+  // eslint-disable-next-line max-len
+  /*   const middleButton = document.querySelector('body > main > div.section.columns-container > div.default-content-wrapper > p.button-container a');
   middleButton.addEventListener('click', (event) => {
     event.preventDefault();
     middleButton.href = window.location.href;
-  });
+  }); */
 
   const footerAnchors = document.querySelectorAll('body > main > div:nth-child(5) > div a');
   console.log(footerAnchors);
