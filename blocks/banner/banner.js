@@ -2,8 +2,18 @@ export default function decorate(block) {
   let ctaText = '';
   let ctaLink = '';
   let ctaButton = '';
+  let ctaFontColor = ''; // New variable for font color
   [...block.children].forEach((row, index) => {
     console.log(row, index);
+    if (index === 6) {
+      // Authorable CTA font color
+      ctaFontColor = row.textContent.trim();
+      const buttonLinks = document.querySelectorAll('.section.banner-container a.button:any-link, button');
+      buttonLinks.forEach((button) => {
+        button.style.color = ctaFontColor;
+      });
+      row.textContent = '';
+    }
     if (index === 5) {
       const buttonLinks = document.querySelectorAll('.section.banner-container a.button:any-link, button');
       buttonLinks.forEach((button) => {

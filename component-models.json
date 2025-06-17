@@ -166,6 +166,13 @@
         "name": "buttonColor",
         "label": "CTA Color",
         "value": "#f8cd51"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonFontColor",
+        "label": "CTA Font Color",
+        "value": "#ffffff"
       }
     ]
   },
