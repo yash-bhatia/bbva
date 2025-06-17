@@ -151,17 +151,32 @@ async function loadPage() {
   loadDelayed();
 
   let sectionColor;
+  let fontColor;
   const headerSection = document.querySelector('.headernav.section');
   if (headerSection) {
     sectionColor = headerSection.getAttribute('data-sectioncolor');
+    fontColor = headerSection.getAttribute('data-fontcolor');
     console.log(sectionColor);
-    headerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`; // Set your desired background color here
+    headerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`;
+    headerSection.style.color = `#${fontColor.split('#')[1]}`;
+    // Apply font color to all child elements
+    const headerChildren = headerSection.querySelectorAll('*');
+    headerChildren.forEach(child => {
+      child.style.color = `#${fontColor.split('#')[1]}`;
+    });
   }
   const footerSection = document.querySelector('.footernav.section');
   if (footerSection) {
     sectionColor = footerSection.getAttribute('data-sectioncolor');
+    fontColor = footerSection.getAttribute('data-fontcolor');
     console.log(sectionColor);
-    footerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`; // Set your desired background color here
+    footerSection.style.backgroundColor = `#${sectionColor.split('#')[1]}`;
+    footerSection.style.color = `#${fontColor.split('#')[1]}`;
+    // Apply font color to all child elements
+    const footerChildren = footerSection.querySelectorAll('*');
+    footerChildren.forEach(child => {
+      child.style.color = `#${fontColor.split('#')[1]}`;
+    });
   }
 
   const remainingNavElement = document.querySelectorAll('body > main > div:nth-child(1) > div p');
