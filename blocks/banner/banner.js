@@ -47,11 +47,13 @@ export default function decorate(block) {
       // Authorable title font color
       titleFontColor = row.textContent.trim();
       row.textContent = '';
+      console.log('titleFontColor', titleFontColor);
     }
     if (index === 8) {
       // Authorable description font color
       descriptionFontColor = row.textContent.trim();
       row.textContent = '';
+      console.log('descriptionFontColor', descriptionFontColor);
     }
   });
 
