@@ -3,6 +3,8 @@ export default function decorate(block) {
   let ctaLink = '';
   let ctaButton = '';
   let ctaFontColor = ''; // New variable for font color
+  let titleFontColor = '';
+  let descriptionFontColor = '';
   [...block.children].forEach((row, index) => {
     console.log(row, index);
     if (index === 6) {
@@ -41,7 +43,28 @@ export default function decorate(block) {
       ctaButton.classList.add('button'); // Add the class "button" to ctaButton
       ctaLink = ctaButton.textContent;
     }
+    if (index === 7) {
+      // Authorable title font color
+      titleFontColor = row.textContent.trim();
+      row.textContent = '';
+    }
+    if (index === 8) {
+      // Authorable description font color
+      descriptionFontColor = row.textContent.trim();
+      row.textContent = '';
+    }
   });
+
   ctaButton.textContent = ctaText;
   ctaButton.href = ctaLink;
+
+  // After rendering the banner content:
+  const titleEl = block.querySelector('.banner-title');
+  if (titleEl && titleFontColor) {
+    titleEl.style.color = titleFontColor;
+  }
+  const descEl = block.querySelector('.banner-description');
+  if (descEl && descriptionFontColor) {
+    descEl.style.color = descriptionFontColor;
+  }
 }

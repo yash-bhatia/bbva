@@ -173,6 +173,20 @@
         "name": "buttonFontColor",
         "label": "CTA Font Color",
         "value": "#ffffff"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "titleFontColor",
+        "label": "Title Font Color",
+        "value": "#000000"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "descriptionFontColor",
+        "label": "Description Font Color",
+        "value": "#333333"
       }
     ]
   },
