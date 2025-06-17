@@ -3,10 +3,18 @@ export default function decorate(block) {
   let ctaLink = '';
   let ctaButton = '';
   let ctaFontColor = ''; // New variable for font color
-  let titleFontColor = '';
-  let descriptionFontColor = '';
+  const titleFontColor = '';
+  const descriptionFontColor = '';
+  let titleEl;
+  let descEl;
   [...block.children].forEach((row, index) => {
     console.log(row, index);
+    if (index === 0) {
+      titleEl = row.querySelector('h1, h2, h3, h4, h5, h6');
+    }
+    if (index === 1) {
+      descEl = row.querySelector('p');
+    }
     if (index === 6) {
       // Authorable CTA font color
       ctaFontColor = row.textContent.trim();
@@ -60,12 +68,9 @@ export default function decorate(block) {
   ctaButton.textContent = ctaText;
   ctaButton.href = ctaLink;
 
-  // After rendering the banner content:
-  const titleEl = block.querySelector('.banner-title');
   if (titleEl && titleFontColor) {
     titleEl.style.color = titleFontColor;
   }
-  const descEl = block.querySelector('.banner-description');
   if (descEl && descriptionFontColor) {
     descEl.style.color = descriptionFontColor;
   }
