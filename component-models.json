@@ -123,6 +123,13 @@
         "name": "sectionColor",
         "label": "Section Color",
         "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fontColor",
+        "label": "Font Color",
+        "value": "#000000"
       }
     ]
   },
