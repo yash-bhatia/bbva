@@ -3,8 +3,8 @@ export default function decorate(block) {
   let ctaLink = '';
   let ctaButton = '';
   let ctaFontColor = ''; // New variable for font color
-  const titleFontColor = '';
-  const descriptionFontColor = '';
+  let titleFontColor = '';
+  let descriptionFontColor = '';
   let titleEl;
   let descEl;
   [...block.children].forEach((row, index) => {
